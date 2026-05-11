@@ -1,0 +1,19 @@
+module Base
+{
+    imports
+    {
+        Base
+    }
+
+    item Marinara
+    {
+        HungerChange = -15.0,
+        Tags = base:pizzasauce,
+    }
+
+    item CookingMag3
+    {
+        LearnedRecipes = MakePizza;MakePizzaMarinara;MakePizzaBianca,
+    }
+
+}

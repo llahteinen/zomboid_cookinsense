@@ -1,0 +1,94 @@
+module Base
+{
+    imports
+    {
+        Base
+    }
+
+    item PizzaMarinaraRecipe
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 1.3,
+        Icon = PizzaWhole,
+        EatType = Pizza,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -65.0,
+        Calories = 1416.0,
+        Carbohydrates = 230.13,
+        Lipids = 24.66,
+        Proteins = 35.4,
+        StaticModel = Pizza,
+        WorldStaticModel = PizzaRecipe,
+        IsCookable = true,
+        MinutesToCook = 20,
+        MinutesToBurn = 50,
+        RemoveNegativeEffectOnCooked = true,
+        UnhappyChange = 10,
+        BadInMicrowave = true,
+        CookingSound = FryingFood,
+    }
+
+    item PizzaBiancaRecipe
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 1.3,
+        Icon = PizzaWhole,
+        EatType = Pizza,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -65.0,
+        Calories = 1409.0,
+        Carbohydrates = 199.0,
+        Lipids = 26.0,
+        Proteins = 41.8,
+        StaticModel = Pizza,
+        WorldStaticModel = PizzaRecipe,
+        IsCookable = true,
+        MinutesToCook = 20,
+        MinutesToBurn = 50,
+        RemoveNegativeEffectOnCooked = true,
+        UnhappyChange = 10,
+        BadInMicrowave = true,
+        CookingSound = FryingFood,
+    }
+
+    item PizzaMarinara
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Pizza,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -25.0,
+        UnhappyChange = -10,
+        Calories = 990.0,
+        Carbohydrates = 120.0,
+        Lipids = 39.0,
+        Proteins = 42.0,
+        StaticModel = PizzaSlice_Ground,
+        WorldStaticModel = PizzaSlice_Ground,
+    }
+
+    item PizzaBianca
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Pizza,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -25.0,
+        UnhappyChange = -10,
+        Calories = 990.0,
+        Carbohydrates = 120.0,
+        Lipids = 39.0,
+        Proteins = 42.0,
+        StaticModel = PizzaSlice_Ground,
+        WorldStaticModel = PizzaSlice_Ground,
+    }
+
+}
