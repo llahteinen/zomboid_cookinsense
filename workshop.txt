@@ -1,10 +1,10 @@
 version=1
-title=pzmc-Template
-description=[h2]Brief 1 sentence description.[/h2]
+title=Cookin sense
+description=[h2]Common sense for cooking recipes[/h2]
+description=Adds ability to make pizza without cheese, add condiments to cereal, and other common sense cooking things.
 description=
-description=[url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner2.png[/img][/url]
 description=
 description=
 description=[h3]Copyright 2024 <USERNAME>. This item is not authorized for posting on Steam, except under the Steam account named <USERNAME>.[/h3]
-tags=Build 41;
+tags=Build 42;
 visibility=unlisted
