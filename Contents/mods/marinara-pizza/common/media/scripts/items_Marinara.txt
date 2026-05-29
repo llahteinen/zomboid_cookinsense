@@ -5,6 +5,8 @@ module Base
         Base
     }
 
+    /* == PIZZA == */
+
     item PizzaMarinaraRecipe
     {
         DisplayCategory = Food,
@@ -89,6 +91,91 @@ module Base
         Proteins = 42.0,
         StaticModel = PizzaSlice_Ground,
         WorldStaticModel = PizzaSlice_Ground,
+    }
+
+    /* == CEREAL == */
+
+    item CerealBowlRecipe
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = Oatmeal,
+        EatType = 2handbowl,
+        PourType = bowl,
+        ReplaceOnUse = Base.Bowl,
+        DaysFresh = 4,
+        DaysTotallyRotten = 7,
+        HungerChange = -20.0,
+        ThirstChange = -15.0,
+        Calories = 295.0,
+        Carbohydrates = 71.5,
+        Lipids = 3.25,
+        Proteins = 6.5,
+        StaticModel = BowlRice_Ground,
+        WorldStaticModel = BowlRice_Ground,
+        SoundMap = DumpContents EmptyBowlFromFood,
+        Tooltip = Tooltip_CerealBowlRecipe,
+    }
+
+    /* == STIR FRY BOWL == */
+
+    item FryBowl
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 1.0,
+        Icon = BowlFull,
+        BadCold = true,
+        BadInMicrowave = true,
+        EatType = 2handbowl,
+        PourType = bowl,
+        IsCookable = true,
+        ReplaceOnUse = Base.Bowl,
+        MinutesToCook = 15,
+        MinutesToBurn = 25,
+        DaysFresh = 2,
+        DaysTotallyRotten = 4,
+        HungerChange = -15.0,
+        UnhappyChange = -20,
+        Calories = 250.0,
+        Carbohydrates = 34.0,
+        Lipids = 3.0,
+        Proteins = 23.0,
+        StaticModel = BowlSoup_Ground,
+        WorldStaticModel = BowlSoup_Ground,
+        CookingSound = BoilingFood,
+        SoundMap = DumpContents EmptyBowlFromSoup,
+        Tags = base:dontinheritcondition,
+    }
+
+    item FryBowlClay
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 1.0,
+        Icon = BowlFull,
+        BadCold = true,
+        BadInMicrowave = true,
+        EatType = 2handbowl,
+        PourType = bowl,
+        IsCookable = true,
+        ReplaceOnUse = Base.ClayBowl,
+        MinutesToCook = 15,
+        MinutesToBurn = 25,
+        DaysFresh = 2,
+        DaysTotallyRotten = 4,
+        HungerChange = -15.0,
+        UnhappyChange = -20,
+        Calories = 250.0,
+        Carbohydrates = 34.0,
+        Lipids = 3.0,
+        Proteins = 23.0,
+        StaticModel = BowlSoup_Ground,
+        WorldStaticModel = BowlSoup_Ground,
+        CookingSound = BoilingFood,
+        SoundMap = DumpContents EmptyBowlFromSoup,
+        Tags = base:dontinheritcondition,
     }
 
 }

@@ -5,6 +5,8 @@ module Base
         Base
     }
 
+    /* == PIZZA == */
+
     item Marinara
     {
         HungerChange = -15.0,
@@ -14,6 +16,43 @@ module Base
     item CookingMag3
     {
         LearnedRecipes = MakePizza;MakePizzaMarinara;MakePizzaBianca,
+    }
+
+    /* == CEREAL == */
+
+    item Sugar
+    {
+        EvolvedRecipe = HotDrink:1;Toast:1;Oatmeal:1;CerealBowl:1,
+    }
+
+    item SugarBrown
+    {
+        EvolvedRecipe = HotDrink:1;Toast:1;Oatmeal:1;CerealBowl:1,
+    }
+
+    item Honey
+    {
+        EvolvedRecipe = Cake:5;Sandwich:2;FruitSalad:2;HotDrink:2;Pancakes:2;ConeIcecream:2;PieSweet:5;Toast:2;Oatmeal:2;CerealBowl:2,
+    }
+
+    item JamFruit
+    {
+        EvolvedRecipe = Sandwich:3;Pancakes:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3;CerealBowl:5,
+    }
+
+    item JamMarmalade
+    {
+        EvolvedRecipe = Sandwich:3;Pancakes:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3;CerealBowl:5,
+    }
+
+    item MapleSyrup
+    {
+        EvolvedRecipe = Pancakes:3;ConeIcecream:3;Oatmeal:3;CerealBowl:3,
+    }
+
+    item CocoaPowder
+    {
+        EvolvedRecipe = HotDrink:5;ConeIcecream:5;Pancakes:5;CerealBowl:5,
     }
 
 }

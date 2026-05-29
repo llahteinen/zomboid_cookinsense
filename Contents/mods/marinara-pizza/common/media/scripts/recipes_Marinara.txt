@@ -5,6 +5,8 @@ module Base
         Base
     }
 
+    /* == PIZZA == */
+
     craftRecipe MakePizzaMarinara
     {
         timedAction = MixingBowl,
@@ -98,6 +100,79 @@ module Base
         Name = Prepare Pizza Bianca,
         CanAddSpicesEmpty = true,
         Template = Pizza,
+    }
+
+    /* == CEREAL == */
+
+    evolvedrecipe CerealBowl
+    {
+        BaseItem = Base.CerealBowl,
+        MaxItems = 1,
+        ResultItem = Base.CerealBowlRecipe,
+        AddIngredientIfCooked = true,
+        Name = CerealBowl,
+        CanAddSpicesEmpty = true,
+        Template = CerealBowl,
+    }
+
+    craftRecipe MakeBowlOfCereal2
+    {
+        timedAction = MixingBowl,
+        time = 20,
+        Tags = InHandCraft;Cooking,
+        category = Cooking,
+        xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Bowl;Base.ClayBowl] mode:destroy flags[ItemCount],
+            item 5 [Base.Cereal],
+            item 1 [*],
+            -fluid 0.3 [CowMilk;SheepMilk] mode:mixture,
+        }
+        outputs
+        {
+            item 1 Base.CerealBowl,
+        }
+    }
+
+    /* == STIR FRY BOWL == */
+
+    craftRecipe Make2BowlsFry
+    {
+        timedAction = MixingBowl,
+        time = 80,
+        OnCreate = RecipeCodeOnCreate.inheritFoodNameBowl,
+        Tooltip = Tooltip_Recipe_CookedPortion,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+        inputs
+        {
+            item 2 [Base.Bowl;Base.ClayBowl] mode:destroy flags[ItemCount],
+            item 1 [Base.PanFriedVegetables;Base.GriddlePanFriedVegetables;Base.PanFriedVegetablesForged;Base.PanFriedVegetables2] mappers[bowlType;potType] flags[InheritCondition;InheritCooked;InheritFood;ItemCount],
+        }
+        outputs
+        {
+            item 2 mapper:bowlType flags[DontInheritCondition],
+            item 1 mapper:potType,
+        }
+        itemMapper bowlType
+        {
+            Base.FryBowl = Base.PanFriedVegetables,
+            Base.FryBowl = Base.GriddlePanFriedVegetables,
+            Base.FryBowl = Base.PanFriedVegetablesForged,
+            Base.FryBowl = Base.PanFriedVegetables2,
+            Base.FryBowlClay = Base.PanFriedVegetables,
+            Base.FryBowlClay = Base.GriddlePanFriedVegetables,
+            Base.FryBowlClay = Base.PanFriedVegetablesForged,
+            Base.FryBowlClay = Base.PanFriedVegetables2,
+        }
+        itemMapper potType
+        {
+            Base.Pan = Base.PanFriedVegetables,
+            Base.GridlePan = Base.GriddlePanFriedVegetables,
+            Base.PanForged = Base.PanFriedVegetablesForged,
+            Base.RoastingPan = Base.PanFriedVegetables2,
+        }
     }
 
 }

@@ -1,4 +1,7 @@
 {
     "Base.PizzaMarinaraRecipe": "Pizza Marinara",
-    "Base.PizzaBiancaRecipe": "Pizza Bianca"
+    "Base.PizzaBiancaRecipe": "Pizza Bianca",
+    "Base.CerealBowlRecipe": "Bowl of Cereal",
+    "Base.FryBowl": "Bowl of food",
+    "Base.FryBowlClay": "Bowl of food"
 }
