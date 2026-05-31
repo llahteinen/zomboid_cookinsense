@@ -147,8 +147,8 @@ module Base
         category = Cooking,
         inputs
         {
-            item 2 [Base.Bowl;Base.ClayBowl] mode:destroy flags[ItemCount],
-            item 1 [Base.PanFriedVegetables;Base.GriddlePanFriedVegetables;Base.PanFriedVegetablesForged;Base.PanFriedVegetables2] mappers[bowlType;potType] flags[InheritCondition;InheritCooked;InheritFood;ItemCount],
+            item 2 [Base.Bowl;Base.ClayBowl] mode:destroy mappers[bowlType] flags[ItemCount],
+            item 1 [Base.PanFriedVegetables;Base.GriddlePanFriedVegetables;Base.PanFriedVegetablesForged;Base.PanFriedVegetables2] mappers[potType] flags[InheritCondition;InheritCooked;InheritFood;ItemCount],
         }
         outputs
         {
@@ -157,14 +157,8 @@ module Base
         }
         itemMapper bowlType
         {
-            Base.FryBowl = Base.PanFriedVegetables,
-            Base.FryBowl = Base.GriddlePanFriedVegetables,
-            Base.FryBowl = Base.PanFriedVegetablesForged,
-            Base.FryBowl = Base.PanFriedVegetables2,
-            Base.FryBowlClay = Base.PanFriedVegetables,
-            Base.FryBowlClay = Base.GriddlePanFriedVegetables,
-            Base.FryBowlClay = Base.PanFriedVegetablesForged,
-            Base.FryBowlClay = Base.PanFriedVegetables2,
+            Base.FryBowl = Base.Bowl,
+            Base.FryBowlClay = Base.ClayBowl,
         }
         itemMapper potType
         {
